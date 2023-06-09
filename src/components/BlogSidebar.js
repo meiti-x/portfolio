@@ -6,8 +6,8 @@ import { useGetTaxonomies } from '../utils/hooks/useGetTaxonomies'
 
 export const BlogSidebar = () => {
   const data = useGetTaxonomies()
-  const categories = []
-  const tags = []
+  const categories = data.categories.group
+  const tags = data.tags.group
 
   return (
     <aside className="post-sidebar">

@@ -34,11 +34,11 @@ pre {
   border: 0;
 }
 
-code[class*='language-'],
-pre[class*='language-'] {
+code[class*="language-"],
+pre[class*="language-"] {
   -webkit-font-smoothing: subpixel-antialiased;
   color: var(--code-font-color);
-  font-family: 'Menlo', var(--font-family-monospace);
+  font-family: "Menlo", var(--font-family-monospace);
   font-size: 0.9rem;
   text-align: left;
   white-space: pre;
@@ -58,13 +58,13 @@ pre[class*='language-'] {
 }
 
 @media screen and (min-width: 700px) {
-  code[class*='language-'],
-  pre[class*='language-'] {
+  code[class*="language-"],
+  pre[class*="language-"] {
     font-size: 0.9rem;
   }
 }
 
-pre[class*='language-'] {
+pre[class*="language-"] {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   padding: 1rem;
@@ -79,7 +79,7 @@ code.language-text {
 }
 
 /* Inline code */
-:not(pre) > code[class*='language-'] {
+:not(pre) > code[class*="language-"] {
   -webkit-font-smoothing: subpixel-antialiased;
   background: var(--inline-code-background-color);
   color: var(--font-color-base);
@@ -90,16 +90,16 @@ code.language-text {
   border: 1px solid var(--border-color);
 }
 
-:not(pre) > a code[class*='language-'] {
+:not(pre) > a code[class*="language-"] {
   color: var(--link);
 }
 
-:not(pre) > a code[class*='language-']:hover {
+:not(pre) > a code[class*="language-"]:hover {
   color: var(--code-link-hover);
 }
 
 code.language-shell::before {
-  content: '$ ';
+  content: "$ ";
   color: var(--comment);
 }
 
@@ -113,6 +113,8 @@ code.language-shell::before {
   overflow: auto;
   margin: 1.5rem -1.5rem;
   max-width: calc(100% + 2.5rem);
+  direction: ltr;
+  text-align: left;
 }
 
 @media screen and (min-width: 700px) {
@@ -124,7 +126,7 @@ code.language-shell::before {
   }
 }
 
-.gatsby-highlight[data-language='terminal'] {
+.gatsby-highlight[data-language="terminal"] {
   box-shadow: none;
   padding: 0;
   background: transparent;
@@ -134,7 +136,7 @@ code.language-shell::before {
   margin-right: 0;
 }
 
-.gatsby-highlight[data-language='text'] {
+.gatsby-highlight[data-language="text"] {
   border: none;
   background: transparent;
   padding: 0;
@@ -166,7 +168,7 @@ code.language-shell::before {
   }
 }
 
-.gatsby-highlight pre[class*='language-'] {
+.gatsby-highlight pre[class*="language-"] {
   background-color: transparent;
   margin: 0;
   padding: 1.5rem;
@@ -176,7 +178,7 @@ code.language-shell::before {
 }
 
 .gatsby-highlight::after {
-  content: '';
+  content: "";
   clear: both;
   display: table;
 }
@@ -213,7 +215,7 @@ code.language-terminal {
 }
 
 pre.language-terminal::before {
-  content: '\2022 \2022 \2022';
+  content: "\2022 \2022 \2022";
   position: absolute;
   top: 0;
   left: 0;
@@ -374,19 +376,19 @@ code::selection {
   background: rgba(150, 150, 150, 0.3) !important;
 }
 
-pre[class*='language-']::-moz-selection,
-pre[class*='language-']::-moz-selection,
-code[class*='language-'] ::-moz-selection,
-code[class*='language-'] ::-moz-selection {
+pre[class*="language-"]::-moz-selection,
+pre[class*="language-"]::-moz-selection,
+code[class*="language-"] ::-moz-selection,
+code[class*="language-"] ::-moz-selection {
   text-shadow: none;
   color: inherit;
   background: rgba(150, 150, 150, 0.3) !important;
 }
 
-pre[class*='language-']::selection,
-pre[class*='language-']::selection,
-code[class*='language-'] ::selection,
-code[class*='language-'] ::selection {
+pre[class*="language-"]::selection,
+pre[class*="language-"]::selection,
+code[class*="language-"] ::selection,
+code[class*="language-"] ::selection {
   text-shadow: none;
   color: inherit;
   background: rgba(150, 150, 150, 0.3) !important;

@@ -1,23 +1,27 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import Img from 'gatsby-image'
+import React from "react";
+import Helmet from "react-helmet";
+import Img from "gatsby-image";
 
-import { Layout } from '../components/Layout'
-import { SEO } from '../components/SEO'
-import { PostSidebar } from '../components/PostSidebar'
-import config from '../utils/config'
+import { Layout } from "../components/Layout";
+import { SEO } from "../components/SEO";
+import { PostSidebar } from "../components/PostSidebar";
+import config from "../utils/config";
+import { Link, graphql } from "gatsby";
+import { georgianToPersianDigits, slugify } from "../utils/helpers";
+import { useGetTaxonomies } from "../utils/hooks/useGetTaxonomies";
 
 export default function PostTemplate({ data }) {
-  const post = data.markdownRemark
-  const { tags, categories, title, date, thumbnail } =
-    post.frontmatter
-
+  const post = data.markdownRemark;
+  const { title, date, thumbnail } = post.frontmatter;
+  const data2 = useGetTaxonomies();
+  const categories = data2.categories.group;
+  const tags = data2.tags.group;
   return (
     <div>
       <Helmet title={`${post.frontmatter.title} | ${config.siteTitle}`} />
-      <SEO postPath={post.fields.slug} postNode={post} postSEO />
+      <SEO postPath={post.frontmatter.slug} postNode={post} postSEO />
 
-      <div className="container">
+      <div className="container post-page">
         <div className="grid">
           <div className="article-content">
             <div className="post-header medium width">
@@ -27,16 +31,31 @@ export default function PostTemplate({ data }) {
                 </div>
               )}
               <h1>{title}</h1>
+              <small>{georgianToPersianDigits(date)}</small>
             </div>
             <section className="segment small">
               <div
-                id={post.fields.slug}
+                id={post.frontmatter.slug}
                 className="post-content"
                 dangerouslySetInnerHTML={{ __html: post.html }}
               />
             </section>
 
-            <section id="comments" className="segment">
+            <div className="tags">
+              {tags.map((tag) => {
+                return (
+                  <Link
+                    key={tag.name}
+                    to={`/tags/${slugify(tag.name)}`}
+                    className="tag"
+                    activeClassName="active"
+                  >
+                    {tag.name}#
+                  </Link>
+                );
+              })}
+            </div>
+            {/* <section id="comments" className="segment">
               <div className="card single">
                 <h3>Newsletter</h3>
                 <p className="text-medium">
@@ -52,45 +71,35 @@ export default function PostTemplate({ data }) {
                   Subscribe to the Newsletter
                 </a>
               </div>
-            </section>
+            </section> */}
           </div>
-
+          {/* 
           <PostSidebar
             date={date}
             tags={tags}
             categories={categories}
             thumbnail={thumbnail}
-          />
+          /> */}
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-PostTemplate.Layout = Layout
+PostTemplate.Layout = Layout;
 
-// export const pageQuery = graphql`
-//   query BlogPostBySlug($slug: String!) {
-//     markdownRemark(fields: { slug: { eq: $slug } }) {
-//       html
-//       excerpt
-//       fields {
-//         slug
-//       }
-//       frontmatter {
-//         title
-//         date(formatString: "MMMM DD, YYYY")
-//         tags
-//         categories
-//         description
-//         thumbnail {
-//           childImageSharp {
-//             fixed(width: 150, height: 150) {
-//               ...GatsbyImageSharpFixed
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// `
+export const pageQuery = graphql`
+  query BlogPostBySlug($slug: String!) {
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+      html
+      excerpt
+      frontmatter {
+        slug
+        title
+        date
+        tags
+        categories
+      }
+    }
+  }
+`;

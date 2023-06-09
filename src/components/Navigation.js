@@ -1,25 +1,24 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from "react";
+import { Link } from "gatsby";
 
-import { ExternalLinkIcon } from '../assets/ExternalLinkIcon'
-import blog from '../assets/nav-blog.png'
-import floppyLogo from '../assets/floppylogo.png'
-import floppy from '../assets/nav-floppy.png'
-import github from '../assets/nav-github.png'
-import projects from '../assets/nav-projects.png'
-import moon from '../assets/moon.png'
-import { slugify } from '../utils/helpers'
+import { ExternalLinkIcon } from "../assets/ExternalLinkIcon";
+import blog from "../assets/nav-blog.png";
+import floppyLogo from "../assets/floppylogo.png";
+import floppy from "../assets/nav-floppy.png";
+import github from "../assets/nav-github.png";
+import projects from "../assets/nav-projects.png";
+import moon from "../assets/moon.png";
+import { slugify } from "../utils/helpers";
 
 const mainNavItems = [
-  { url: '/', icon: floppy, label: 'صفحه اصلی', },
-  { url: '/blog', icon: floppy, label: 'بلاگ' },
-  { url: '/about', icon: blog, label: 'درباره' },
-  // { url: '/projects', icon: projects, label: 'Projects' },
-]
+  { url: "/", icon: floppy, label: "صفحه اصلی", value: "home" },
+  { url: "/blog", icon: floppyLogo, label: "بلاگ", value: "blog" },
+  { url: "/projects", icon: projects, label: "پروژه‌ها", value: "projects" },
+];
 
 const socialNavItems = [
-  { url: 'https://github.com/taniarascia', icon: github, label: 'GitHub' },
-]
+  { url: "https://github.com/mahdi-momeni", icon: github, label: "GitHub" },
+];
 
 export const Navigation = ({ theme, onUpdateTheme }) => {
   return (
@@ -33,8 +32,8 @@ export const Navigation = ({ theme, onUpdateTheme }) => {
                   to={item.url}
                   key={item.label}
                   activeClassName="active"
-                  className={`item ${slugify(item.label)} ${
-                    item.mobileOnly ? 'mobile-only' : ''
+                  className={`item ${slugify(item.value)} ${
+                    item.mobileOnly ? "mobile-only" : ""
                   }`}
                 >
                   <span>{item.label}</span>
@@ -66,5 +65,5 @@ export const Navigation = ({ theme, onUpdateTheme }) => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};

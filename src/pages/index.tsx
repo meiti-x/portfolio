@@ -141,7 +141,7 @@ export const blogQuery = graphql`
   query MyQuery {
     latestBlog: allMarkdownRemark(
       limit: 10
-      sort: { frontmatter: { date: ASC } }
+      sort: { frontmatter: { date: DESC } }
     ) {
       edges {
         node {
@@ -151,6 +151,7 @@ export const blogQuery = graphql`
             slug
             shortTitle
             title
+            date
           }
         }
       }

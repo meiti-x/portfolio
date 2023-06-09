@@ -55,7 +55,7 @@
   /* Font family */
   --font-family-base: "Vazirmatn", sans-serif, -apple-system, BlinkMacSystemFont,
     "Helvetica Neue", Arial, sans-serif;
-  --font-family-monospace: "Vazirmatn",  monospace;
+  --font-family-monospace: "Vazirmatn", monospace;
   --font-family-heading: "Vazirmatn", -apple-system, BlinkMacSystemFont,
     "Helvetica Neue", Arial, sans-serif;
   --font-family-nav: "Vazirmatn", -apple-system, BlinkMacSystemFont,
@@ -1163,6 +1163,11 @@ a.post time {
   .grid {
     display: grid;
     grid-template-columns: auto 300px;
+    gap: 6rem;
+  }
+  .post-page .grid {
+    display: grid;
+    grid-template-columns: auto;
     gap: 6rem;
   }
 }

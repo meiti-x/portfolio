@@ -27,7 +27,6 @@ export const Posts = ({
     () => Object.keys(postsByYear).reverse(),
     [postsByYear]
   );
-  console.log(years);
   if (showYears) {
     return years.map((year) => (
       <section key={year} className="segment">
