@@ -41,7 +41,7 @@ export default function Index({ data }) {
           </Hero>
           <div className="decoration">
             <img
-              src="/ram.png"
+              src="../../static/ram.png"
               alt="RAM Ram"
               className="image hero-image"
               title="RAM Ram"
