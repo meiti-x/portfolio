@@ -1,9 +1,10 @@
 const config = {
-  siteTitle: 'مهدی مومنی',
-  siteUrl: 'https://www.taniarascia.com',
-  siteLogo: '/logo.png',
+  siteTitle: "مهدی مومنی",
+  siteUrl: "https://www.taniarascia.com",
+  siteLogo: "/logo.png",
   description:
-    'توسعه دهنده نرم افزار و کمی هم سازنده پروژه های اوپن سورس. اینجا باغچه دیجیتال منه ',
-}
+    "توسعه دهنده نرم افزار و کمی هم سازنده پروژه های اوپن سورس. اینجا باغچه دیجیتال منه ",
+  assetsBasePath: process.env.NODE_ENV === "production" ? "/portfolio" : "",
+};
 
-export default config
+export default config;

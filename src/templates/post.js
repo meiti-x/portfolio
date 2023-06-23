@@ -9,6 +9,7 @@ import config from "../utils/config";
 import { Link, graphql } from "gatsby";
 import { georgianToPersianDigits, slugify } from "../utils/helpers";
 import { useGetTaxonomies } from "../utils/hooks/useGetTaxonomies";
+import Divider from "../components/Divider";
 
 export default function PostTemplate({ data }) {
   const post = data.markdownRemark;
@@ -40,7 +41,7 @@ export default function PostTemplate({ data }) {
                 dangerouslySetInnerHTML={{ __html: post.html }}
               />
             </section>
-
+            <Divider/>
             <div className="tags">
               {tags.map((tag) => {
                 return (

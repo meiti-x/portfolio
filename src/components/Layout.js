@@ -7,6 +7,7 @@ import { Footer } from './Footer'
 
 import '../styles/style.css'
 import '../styles/new-moon.css'
+import config from '../utils/config'
 
 export const Layout = ({ children }) => {
   const [theme, setTheme] = useState('dark')
@@ -30,7 +31,7 @@ export const Layout = ({ children }) => {
       <Helmet>
         <link rel="shortcut icon" type="image/png" href={favicon} />
         {theme === 'dark' && (
-          <link rel="stylesheet" type="text/css" href="/dark-mode.css" />
+          <link rel="stylesheet" type="text/css" href={`${config.assetsBasePath}/dark-mode.css`} />
         )}
       </Helmet>
 

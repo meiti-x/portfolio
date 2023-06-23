@@ -1,35 +1,34 @@
 module.exports = {
-  pathPrefix:"/portfolio",
-  assetPrefix:"/portfolio",
+  pathPrefix: "/portfolio",
   siteMetadata: {
-    title: 'Tania Rascia',
+    title: "Tania Rascia",
     author: {
-      name: 'Tania Rascia',
+      name: "Tania Rascia",
     },
-    pathPrefix: '/',
-    siteUrl: 'https://www.taniarascia.com',
+
+    siteUrl: "https://mahdi-momeni.github.io/portfolio/",
     description:
-      'Software engineer and open-source creator. This is my digital garden.',
-    feedUrl: 'https://www.taniarascia.com/rss.xml',
-    logo: 'https://www.taniarascia.com/logo.png',
+      "Software engineer and open-source creator. This is my digital garden.",
+    feedUrl: "https://www.taniarascia.com/rss.xml",
+    logo: "https://www.taniarascia.com/logo.png",
   },
   plugins: [
     // ===================================================================================
     // Meta
     // ===================================================================================
 
-    'gatsby-plugin-react-helmet',
+    "gatsby-plugin-react-helmet",
     {
-      resolve: 'gatsby-plugin-manifest',
+      resolve: "gatsby-plugin-manifest",
       options: {
-        name: 'Tania Rascia',
-        short_name: 'Tania Rascia',
+        name: "Tania Rascia",
+        short_name: "Tania Rascia",
         description:
-          'Software engineer and open source creator. This is my digital garden.',
-        start_url: '/',
-        background_color: 'white',
-        theme_color: '#6b76f3',
-        display: 'minimal-ui',
+          "Software engineer and open source creator. This is my digital garden.",
+        start_url: "/",
+        background_color: "white",
+        theme_color: "#6b76f3",
+        display: "minimal-ui",
         icon: `static/logo.png`,
       },
     },
@@ -58,11 +57,11 @@ module.exports = {
                   url: site.siteMetadata.siteUrl + edge.node.frontmatter.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.frontmatter.slug,
                   custom_elements: [
-                    { 'content:encoded': edge.node.html },
-                    { author: 'hello@taniarascia.com' },
+                    { "content:encoded": edge.node.html },
+                    { author: "hello@taniarascia.com" },
                   ],
-                })
-              })
+                });
+              });
             },
             query: `
               {
@@ -86,8 +85,8 @@ module.exports = {
                 }
               }
             `,
-            output: '/rss.xml',
-            title: 'Tania Rascia | RSS Feed',
+            output: "/rss.xml",
+            title: "Tania Rascia | RSS Feed",
           },
         ],
       },
@@ -97,19 +96,19 @@ module.exports = {
     // Images and static
     // ===================================================================================
 
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'posts',
+        name: "posts",
         path: `${__dirname}/content/`,
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'assets',
+        name: "assets",
         path: `${__dirname}/static/`,
       },
     },
@@ -119,29 +118,29 @@ module.exports = {
     // ===================================================================================
 
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
-          'gatsby-remark-autolink-headers',
+          "gatsby-remark-autolink-headers",
           {
-            resolve: 'gatsby-remark-images',
+            resolve: "gatsby-remark-images",
             options: {
               maxWidth: 800,
               // linkImagesToOriginal: false,
-              backgroundColor: 'transparent',
+              backgroundColor: "transparent",
             },
           },
           {
-            resolve: 'gatsby-remark-prismjs',
+            resolve: "gatsby-remark-prismjs",
             options: {
-              classPrefix: 'language-',
+              classPrefix: "language-",
               inlineCodeMarker: null,
               aliases: {},
               showLineNumbers: false,
               noInlineHighlight: false,
               prompt: {
-                user: 'root',
-                host: 'localhost',
+                user: "root",
+                host: "localhost",
                 global: true,
               },
             },
@@ -149,51 +148,5 @@ module.exports = {
         ],
       },
     },
-
-    // ===================================================================================
-    // Search
-    // ===================================================================================
-
-    // {
-    //   resolve: 'gatsby-plugin-local-search',
-    //   options: {
-    //     name: 'pages',
-    //     engine: 'flexsearch',
-    //     engineOptions: {
-    //       encode: 'icase',
-    //       tokenize: 'forward',
-    //       async: false,
-    //     },
-    //     query: `
-    //       {
-    //         allMarkdownRemark(filter: { frontmatter: { template: { eq: "post" } } }) {
-    //           nodes {
-    //             id
-    //             frontmatter {
-    //               title
-    //               tags
-    //               slug
-    //               date(formatString: "MMMM DD, YYYY")
-    //             }
-    //             rawMarkdownBody
-    //           }
-    //         }
-    //       }
-    //     `,
-    //     ref: 'id',
-    //     index: ['title', 'tags'],
-    //     store: ['id', 'slug', 'title', 'tags', 'date'],
-    //     normalizer: ({ data }) =>
-    //       data.allMarkdownRemark.nodes.map((node) => ({
-    //         id: node.id,
-    //         slug: `/${node.frontmatter.slug}`,
-    //         title: node.frontmatter.title,
-    //         body: node.rawMarkdownBody,
-    //         tags: node.frontmatter.tags,
-    //         categories: node.frontmatter.categories,
-    //         date: node.frontmatter.date,
-    //       })),
-    //   },
-    // },
-  ]
-}
+  ],
+};
