@@ -1,4 +1,67 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Tania Rascia | RSS Feed]]></title><description><![CDATA[Software engineer and open-source creator. This is my digital garden.]]></description><link>https://mahdi-momeni.github.io/portfolio</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 23 Jun 2023 09:04:17 GMT</lastBuildDate><item><title><![CDATA[اصول ابتدایی کد تمیز در جاوااسکریپت]]></title><description><![CDATA[نوشتن کد تمیز قابلیت maintain پروژه و بهره‌وری تیم فنی رو افزایش میده. البته کد تمیز به این معنی نیست که یکی کدتون رو ببینه نگه wtf…]]></description><link>https://mahdi-momeni.github.io/portfolio/blog/cleanCode-review</link><guid isPermaLink="false">https://mahdi-momeni.github.io/portfolio/blog/cleanCode-review</guid><pubDate>Sun, 14 Mar 1402 20:34:16 GMT</pubDate><content:encoded>&lt;p&gt;نوشتن کد تمیز قابلیت maintain پروژه و بهره‌وری تیم فنی رو افزایش میده. البته کد تمیز به این معنی نیست که یکی کدتون رو ببینه نگه wtf بلکه توی اینه که تعداد wtf هارو کاهش بدیم.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Tania Rascia | RSS Feed]]></title><description><![CDATA[Software engineer and open-source creator. This is my digital garden.]]></description><link>https://mahdi-momeni.github.io/portfolio</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 23 Jun 2023 15:27:47 GMT</lastBuildDate><item><title><![CDATA[ایجاد دیزاین سیستم در next با tailwind]]></title><description><![CDATA[…]]></description><link>https://mahdi-momeni.github.io/portfolio/blog/design-system</link><guid isPermaLink="false">https://mahdi-momeni.github.io/portfolio/blog/design-system</guid><pubDate>Fri, 02 Apr 1402 20:34:16 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;دیزاین سیستم چیست ؟&lt;/strong&gt; دیزاین سیستم به یه سری اصول٬ کامپوننت و قوانینی که ظاهر اپلیکیشن و تجربه کاربری برنامه مارو در بر میگیره٬ میگن. به طور مثال دکمه ها یا اندازه متن ها.&lt;/p&gt;
+&lt;h2 id=&quot;چرا-باید-اصلا-از-دیزاین-سیستم-استفاده-کنیم-&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%DA%86%D8%B1%D8%A7-%D8%A8%D8%A7%DB%8C%D8%AF-%D8%A7%D8%B5%D9%84%D8%A7-%D8%A7%D8%B2-%D8%AF%DB%8C%D8%B2%D8%A7%DB%8C%D9%86-%D8%B3%DB%8C%D8%B3%D8%AA%D9%85-%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%DA%A9%D9%86%DB%8C%D9%85-&quot; aria-label=&quot;چرا باید اصلا از دیزاین سیستم استفاده کنیم  permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;چرا باید اصلا از دیزاین سیستم استفاده کنیم ؟&lt;/h2&gt;
+&lt;p&gt;دیزاین سیستم راه حلی برای یکپارچه کردن طراحی محصول بین تیم فنی٬ طراحان و مدیریت است تا تجربه کاربری واحدی رو به کاربر نهایی انتقال بدیم.&lt;/p&gt;
+&lt;p&gt;همچنین توی پروژه ای که تعداد کامپوننت ها زیاد میشه اگه به صورت ساختار مندی پیش نرفته باشیم٬ خیلی کامپوننت ها شلوغ میشه و تسک ها فرسایشی جلو میره و maintain پروژه٬ سخت و سختر میشه.&lt;/p&gt;
+&lt;p&gt;همونطور که تیم فنی یک دیزاین سیستم ارائه میدن تیم فنی هم باید اینکارو بکنن تا تیم طراحی بتونه روی جزییات ریز نظرشو بگه.&lt;/p&gt;
+&lt;p&gt;نمونه دیزاین سیستم در فیگما:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/portfolio/static/fb5a6962755afd281d5c064b1026cf34/29007/figma-designsystem.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 60%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAACD0lEQVR42m2Se2sUMRTF9/t/FQWrtmClIEr/KlapFUvtc7tV99GZ3cxM3rn5STLtFsHAIRNyc865584kBiH4RIzyf4R/kQr8I57OIY13UZg4Fxh6SxKQlEkpk4UKEYgxPxP6UTzV7zQiJCQljMlYG5g4H7mdPfDr92aLm9sVt9MVs1nDaqWJIdeHhTTnXN1JLMK5kmZJbDaC6i0Taz0vXu6yu3fAzut9Xu284/j4lOubGZeXU9q2G51HwWnD4m6KSGbdNMzvZ7WL0k4hHLQfHd61c+7bBXcPc+7XSzqnIVMflghCaUvArFtOP+wTBL6ffOXTwXuk1KVUBUMITErwOnpMDNgY6m5C2A4lbHPK2GFg+vOsklydn/Hj5EvRJaVUo9gSPg0jxWeUYXnveVqSZOtC9x3DoHHOs26bkbB2k5iUtoyxtbCsolTgfcRYi9Y9D80Sa2yNodT2/YBSPV3XozaKECMxBpxzI6G1jkHrehFCuSyKguocR8dz3u5dsFgMOGfRg6k1KUVSrR/bLe5SkkeH1rJRHVobVFd2i0hCK+His3C4/0CztMQUMMZjrOP6xnF27uq5xCEi+JJhISxZqK7HWlvbKAI5ZZSzfFvecnh1RNO3Y5ZZaNSGP0vF/ULRblR1F2Ok64bnDNcbhTamEpbAy2/iXUtz95HpyRu0WmwzrjV6oDcDqh/GgSXBWM9fD4mdtWSzkO8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;figma designsystem&quot;
+        title=&quot;&quot;
+        src=&quot;/portfolio/static/fb5a6962755afd281d5c064b1026cf34/5a190/figma-designsystem.png&quot;
+        srcset=&quot;/portfolio/static/fb5a6962755afd281d5c064b1026cf34/772e8/figma-designsystem.png 200w,
+/portfolio/static/fb5a6962755afd281d5c064b1026cf34/e17e5/figma-designsystem.png 400w,
+/portfolio/static/fb5a6962755afd281d5c064b1026cf34/5a190/figma-designsystem.png 800w,
+/portfolio/static/fb5a6962755afd281d5c064b1026cf34/c1b63/figma-designsystem.png 1200w,
+/portfolio/static/fb5a6962755afd281d5c064b1026cf34/29007/figma-designsystem.png 1600w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;به دو روش میشه دیزاین سیستم رو تعریف کرد&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;استفاده از کتابخونه های oponinated مثله mui یا ant.d که خیلی چیزهارو داخل خودش هندل کرده و آماده است و باید با قوانین اونا کار کنید.&lt;/li&gt;
+&lt;li&gt;استفاده از کتابخونه های سبک مثل tailwind&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;اگه از روش اول استفاده کنیم باید خیلی سفارشی سازی کنیم تا چیزی که تیم ui/ux انتظار دارن رو برآورده کنیم و مشکل بعدی این کتابخونه ها اینه که خیلی سنگینه  و شامل خیلی چیزهای میشه که ممکنه اصلا توی پروژه استفاده نکنیم.&lt;/p&gt;
+&lt;p&gt;توی روش دوم سفارشی سازی نمیکنیم در اصل یک چیزی رو از اول میسازیم به خاطر همین خیلی انعطاف پذیر تر و سبک تره(نترسید چرخ رو از اول اختراع نمیکنیم :)) و فقط چیزهای رو میسازیم که لازم داریم.&lt;/p&gt;
+&lt;h2 id=&quot;ساخت-دیزاین-سیستم&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%D8%B3%D8%A7%D8%AE%D8%AA-%D8%AF%DB%8C%D8%B2%D8%A7%DB%8C%D9%86-%D8%B3%DB%8C%D8%B3%D8%AA%D9%85&quot; aria-label=&quot;ساخت دیزاین سیستم permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ساخت دیزاین سیستم&lt;/h2&gt;
+&lt;p&gt;برای ساخت دیزاین سیستم ما از چند تکنولوژی استفاده میکنیم.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;tailwind&lt;/code&gt; : بخاطر اینکه براحتی میشه توی هر پروژه ای اضافه اش کرد و خیلی انعطاف پذیره و پر از utility class هست که راحت میشه باهاش دیزاین سیستم ساخت.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;cva&lt;/code&gt; با استفاده از این کتابخونه میتونیم کلاس هامون رو به صورت شرطی اعمال کنیم&lt;/li&gt;
+&lt;li&gt;‍&lt;code class=&quot;language-text&quot;&gt;storybook&lt;/code&gt; که با استفاده از این کتابخونه میتونیم مستندات کامپوننت رو بنویسیم و یه playground  ایزوله درست کنیم. که میتونیم کامپوننت مون رو بیرون از کل برناممون تست کنیم.&lt;/li&gt;
+&lt;li&gt;‍&lt;code class=&quot;language-text&quot;&gt;radix.ui&lt;/code&gt; برای کامپوننت های که فقط با کلاس نمیشه هندل کرد و نیاز به کارهای js ای داره میتونیم از این کتابخونه استفاده کنیم. فرقش با کتابخونه های بزرگ اینه که تو مثلا میتونی کامپوننت dialog رو کاملا جدا دانلود کنید.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;اول از همه برای اینکه خیالمون برای مسیر دهی راحت و تمیز باشه. میایم &lt;code class=&quot;language-text&quot;&gt;alias&lt;/code&gt; برای مسیرمون توی فایل &lt;code class=&quot;language-text&quot;&gt;tsconfig.json&lt;/code&gt; مینویسیم&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;    &lt;span class=&quot;token property&quot;&gt;&quot;paths&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;@ui/*&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;./src/components/ui/*&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;ساختار پوشه بندی :&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;src/
+└── components/
+    └── ui/
+        └── Button/
+            ├── index.tsx
+            └── button.stories.tsx&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded><author>hello@taniarascia.com</author></item><item><title><![CDATA[اصول ابتدایی کد تمیز در جاوااسکریپت]]></title><description><![CDATA[نوشتن کد تمیز قابلیت maintain پروژه و بهره‌وری تیم فنی رو افزایش میده. البته کد تمیز به این معنی نیست که یکی کدتون رو ببینه نگه wtf…]]></description><link>https://mahdi-momeni.github.io/portfolio/blog/js-cleancode</link><guid isPermaLink="false">https://mahdi-momeni.github.io/portfolio/blog/js-cleancode</guid><pubDate>Sun, 14 Mar 1402 20:34:16 GMT</pubDate><content:encoded>&lt;p&gt;نوشتن کد تمیز قابلیت maintain پروژه و بهره‌وری تیم فنی رو افزایش میده. البته کد تمیز به این معنی نیست که یکی کدتون رو ببینه نگه wtf بلکه توی اینه که تعداد wtf هارو کاهش بدیم.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 500px; &quot;
