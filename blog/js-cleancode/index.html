@@ -91,9 +91,19 @@
 ePay
 <span class="token comment">// Good</span>
 employPaymentInfo</code></pre></div>
+<p>یا مثلا اشتباه رایج در ری اکت</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// BAD</span>
+<span class="token keyword">const</span> <span class="token punctuation">[</span>open<span class="token punctuation">,</span>setOpen<span class="token punctuation">]</span>
+<span class="token comment">// GOOD</span>
+<span class="token keyword">const</span> <span class="token punctuation">[</span>openUserMenu<span class="token punctuation">,</span> setOpenUserMenu<span class="token punctuation">]</span>
+
+<span class="token comment">// BAD </span>
+<span class="token keyword">function</span> <span class="token function">handleClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token comment">// GOOD</span>
+<span class="token keyword">function</span> <span class="token function">handleInsertNewItem</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span></code></pre></div>
 <p>۲. اسم خوب ارتباط رو با بخش های دیگر برنامه مشخص میکنه. مشخصه گر‌های زیادی هستند که ما از اسم میفهمیم دیتای داخل اون چیه. مثلا:</p>
 <ol>
-<li>اسم های که با ‍<code class="language-text">is</code> شروع میشن یک مقداره boolean هستن</li>
+<li>اسم های که با ‍<code class="language-text">is,has,can</code> شروع میشن یک مقداره boolean هستن یا یک فانکشن هستند که خروجی boolean دارن</li>
 <li>مقادیری که با حروف بزرگ <code class="language-text">BASE_URL</code> نوشته میشن٬ یعنی یک ثابت هستند.</li>
 <li>متغیرهای که جمع هستند <code class="language-text">users</code> نشون دهنده این هستند که حاوی یک آرایه هستند.</li>
 <li>توابعی که با <code class="language-text">get</code>, <code class="language-text">select</code> یا <code class="language-text">find</code> هستند معمولا یک خروجی دارن ولی توابعی که با ‍<code class="language-text">process</code> <code class="language-text">run</code> یا <code class="language-text">build</code> هستن خروجی خاصی ندارند.</li>
