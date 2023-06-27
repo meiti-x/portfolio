@@ -17,6 +17,7 @@ export default function PostTemplate({ data }) {
   const data2 = useGetTaxonomies();
   const categories = data2.categories.group;
   const tags = data2.tags.group;
+  console.log(thumbnail);
   return (
     <div>
       <Helmet title={`${post.frontmatter.title} | ${config.siteTitle}`} />
@@ -27,10 +28,11 @@ export default function PostTemplate({ data }) {
           <div className="article-content">
             <div className="post-header medium width">
               {thumbnail && (
-                <div className="mobile-post-image">
+                <div className="">
                   <Img fixed={thumbnail.childImageSharp?.fixed} />
                 </div>
               )}
+               <Img fixed={thumbnail.childImageSharp?.fixed} />
               <h1>{title}</h1>
               <small>{georgianToPersianDigits(date)}</small>
             </div>
@@ -100,6 +102,18 @@ export const pageQuery = graphql`
         date
         tags
         categories
+        thumbnail {
+          childImageSharp {
+            fixed {
+              base64
+              tracedSVG
+              aspectRatio
+              srcWebp
+              srcSetWebp
+              originalName
+            }
+          }
+        }
       }
     }
   }

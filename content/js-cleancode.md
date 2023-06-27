@@ -2,8 +2,9 @@
 template: post
 title:  اصول ابتدایی کد تمیز در جاوااسکریپت
 shortTitle: اصول ابتدایی کد تمیز در جاوااسکریپت
-slug: /blog/cleanCode-review
+slug: /blog/js-cleancode
 date: 1402/03/15
+thumbnail: ./static/logos/gatsby.png
 tags:
   - clean-code
 categories:
@@ -31,9 +32,23 @@ ePay
 employPaymentInfo
 ```
 
+یا مثلا اشتباه رایج در ری اکت
+
+~~~js
+// BAD
+const [open,setOpen]
+// GOOD
+const [openUserMenu, setOpenUserMenu]
+
+// BAD 
+function handleClick(){}
+// GOOD
+function handleInsertNewItem(){}
+~~~
+
 ۲. اسم خوب ارتباط رو با بخش های دیگر برنامه مشخص میکنه. مشخصه گر‌های زیادی هستند که ما از اسم میفهمیم دیتای داخل اون چیه. مثلا:
 
-1. اسم های که با ‍`is` شروع میشن یک مقداره boolean هستن
+1. اسم های که با ‍`is,has,can` شروع میشن یک مقداره boolean هستن یا یک فانکشن هستند که خروجی boolean دارن
 2. مقادیری که با حروف بزرگ `BASE_URL` نوشته میشن٬ یعنی یک ثابت هستند.
 3. متغیرهای که جمع هستند `users` نشون دهنده این هستند که حاوی یک آرایه هستند.
 4. توابعی که با `get`, `select` یا `find` هستند معمولا یک خروجی دارن ولی توابعی که با ‍`process` `run` یا `build` هستن خروجی خاصی ندارند.

@@ -19,9 +19,10 @@ export const Post = ({ node, prefix, newspaper }) => {
       formattedDate = getFormattedDate(node.date);
     }
   }
+  console.log(node)
   return (
     <Link to={node.slug} key={node.id} className="post">
-      <h3>{node.title}</h3>
+      <h3>{node.shortTitle}</h3>
       <time>{georgianToPersianDigits(formattedDate)}</time>
     </Link>
   );

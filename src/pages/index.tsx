@@ -57,7 +57,7 @@ export default function Index({ data }) {
           <Posts data={simplifiedLatest} newspaper />
         </section>
 
-        <section className="segment large">
+        {/* <section className="segment large">
           <Heading title="پرطرفدارها" />
 
           <div className="highlight-preview">
@@ -75,7 +75,7 @@ export default function Index({ data }) {
               );
             })}
           </div>
-        </section>
+        </section> */}
 
         <section className="segment large">
           <Heading title="پروژه‌ها" slug="/projects" />

@@ -5,9 +5,8 @@ export function getSimplifiedPosts(posts, options = {}) {
     slug: post.node.frontmatter.slug,
     tags: post.node.frontmatter.tags,
     categories: post.node.frontmatter.categories,
-    title: options.shortTitle
-      ? post.node.frontmatter.shortTitle
-      : post.node.frontmatter.title,
+    title:  post.node.frontmatter.title,
+    shortTitle: post.node.frontmatter.shortTitle,
     description: post.node.frontmatter.description,
     ...(options.thumbnails && {
       thumbnail: post.node.frontmatter?.thumbnail?.childImageSharp?.fixed,
