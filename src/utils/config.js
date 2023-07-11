@@ -4,7 +4,7 @@ const config = {
   siteLogo: "/logo.png",
   description:
     "توسعه دهنده نرم افزار و کمی هم سازنده پروژه های اوپن سورس. اینجا باغچه دیجیتال منه ",
-  assetsBasePath: process.env.NODE_ENV === "production" ? "/portfolio" : "",
+  assetsBasePath: "",
 };
 
 export default config;
