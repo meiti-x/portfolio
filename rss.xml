@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Tania Rascia | RSS Feed]]></title><description><![CDATA[Software engineer and open-source creator. This is my digital garden.]]></description><link>https://mahdi-momeni.github.io/portfolio</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 11 Jul 2023 16:43:14 GMT</lastBuildDate><item><title><![CDATA[اشتباهات رایج اپ های ری اکتی]]></title><description><![CDATA[1. استفاده از UUID در سطح دیتا نه در سطح کامپوننت اگر در سطح کامپوننت از  uuid استفاده کنید باعث میشه در re-render هم uuid…]]></description><link>https://mahdi-momeni.github.io/portfolio/blog/react-bestpract</link><guid isPermaLink="false">https://mahdi-momeni.github.io/portfolio/blog/react-bestpract</guid><pubDate>Sun, 04 Apr 1402 20:34:16 GMT</pubDate><content:encoded>&lt;h2 id=&quot;1-استفاده-از-uuid-در-سطح-دیتا-نه-در-سطح-کامپوننت&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D8%A7%D8%B2-uuid-%D8%AF%D8%B1-%D8%B3%D8%B7%D8%AD-%D8%AF%DB%8C%D8%AA%D8%A7-%D9%86%D9%87-%D8%AF%D8%B1-%D8%B3%D8%B7%D8%AD-%DA%A9%D8%A7%D9%85%D9%BE%D9%88%D9%86%D9%86%D8%AA&quot; aria-label=&quot;1 استفاده از uuid در سطح دیتا نه در سطح کامپوننت permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. استفاده از UUID در سطح دیتا نه در سطح کامپوننت&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Tania Rascia | RSS Feed]]></title><description><![CDATA[Software engineer and open-source creator. This is my digital garden.]]></description><link>https://mahdi-momeni.github.io/portfolio</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 13 Jul 2023 09:19:08 GMT</lastBuildDate><item><title><![CDATA[اشتباهات رایج اپ های ری اکتی]]></title><description><![CDATA[1. استفاده از UUID در سطح دیتا نه در سطح کامپوننت اگر در سطح کامپوننت از  uuid استفاده کنید باعث میشه در re-render هم uuid…]]></description><link>https://mahdi-momeni.github.io/portfolio/blog/react-bestpract</link><guid isPermaLink="false">https://mahdi-momeni.github.io/portfolio/blog/react-bestpract</guid><pubDate>Sun, 04 Apr 1402 20:34:16 GMT</pubDate><content:encoded>&lt;h2 id=&quot;1-استفاده-از-uuid-در-سطح-دیتا-نه-در-سطح-کامپوننت&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D8%A7%D8%B2-uuid-%D8%AF%D8%B1-%D8%B3%D8%B7%D8%AD-%D8%AF%DB%8C%D8%AA%D8%A7-%D9%86%D9%87-%D8%AF%D8%B1-%D8%B3%D8%B7%D8%AD-%DA%A9%D8%A7%D9%85%D9%BE%D9%88%D9%86%D9%86%D8%AA&quot; aria-label=&quot;1 استفاده از uuid در سطح دیتا نه در سطح کامپوننت permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. استفاده از UUID در سطح دیتا نه در سطح کامپوننت&lt;/h2&gt;
 &lt;p&gt;اگر در سطح کامپوننت از  uuid استفاده کنید باعث میشه در re-render هم uuid جدید ساخته بشه و این باعث گیج شدن ری اکت میشه. چون react از روی key تغییرات رو پیدا میکنه و چون همشون عوض شده بنابراین همه آیتم هارو دوباره rerender میکنه٬ در صورتی که شاید لازم بود فقط یکی از اون ها تغییراتش توی درخت DOM اعمال بشه&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;راه حل :&lt;/strong&gt; میتونید توی ساختار دیتاتون بزارید. حتی اگه دیتای که از سرویس میگرید ID  نداره اول این کارو انجام بدید و بعد loop بزنید&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;      &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; fetchedData &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
@@ -34,7 +34,7 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/portfolio/static/fb5a6962755afd281d5c064b1026cf34/29007/figma-designsystem.png&quot;
+    href=&quot;/static/fb5a6962755afd281d5c064b1026cf34/29007/figma-designsystem.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -47,12 +47,12 @@
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;figma designsystem&quot;
         title=&quot;&quot;
-        src=&quot;/portfolio/static/fb5a6962755afd281d5c064b1026cf34/5a190/figma-designsystem.png&quot;
-        srcset=&quot;/portfolio/static/fb5a6962755afd281d5c064b1026cf34/772e8/figma-designsystem.png 200w,
-/portfolio/static/fb5a6962755afd281d5c064b1026cf34/e17e5/figma-designsystem.png 400w,
-/portfolio/static/fb5a6962755afd281d5c064b1026cf34/5a190/figma-designsystem.png 800w,
-/portfolio/static/fb5a6962755afd281d5c064b1026cf34/c1b63/figma-designsystem.png 1200w,
-/portfolio/static/fb5a6962755afd281d5c064b1026cf34/29007/figma-designsystem.png 1600w&quot;
+        src=&quot;/static/fb5a6962755afd281d5c064b1026cf34/5a190/figma-designsystem.png&quot;
+        srcset=&quot;/static/fb5a6962755afd281d5c064b1026cf34/772e8/figma-designsystem.png 200w,
+/static/fb5a6962755afd281d5c064b1026cf34/e17e5/figma-designsystem.png 400w,
+/static/fb5a6962755afd281d5c064b1026cf34/5a190/figma-designsystem.png 800w,
+/static/fb5a6962755afd281d5c064b1026cf34/c1b63/figma-designsystem.png 1200w,
+/static/fb5a6962755afd281d5c064b1026cf34/29007/figma-designsystem.png 1600w&quot;
         sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -92,7 +92,7 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/portfolio/static/acc55ccb2dce0673acfdc94461d55b09/b0a15/wtf.webp&quot;
+    href=&quot;/static/acc55ccb2dce0673acfdc94461d55b09/b0a15/wtf.webp&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -105,10 +105,10 @@
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;wtf&quot;
         title=&quot;&quot;
-        src=&quot;/portfolio/static/acc55ccb2dce0673acfdc94461d55b09/b0a15/wtf.webp&quot;
-        srcset=&quot;/portfolio/static/acc55ccb2dce0673acfdc94461d55b09/ba381/wtf.webp 200w,
-/portfolio/static/acc55ccb2dce0673acfdc94461d55b09/7f61c/wtf.webp 400w,
-/portfolio/static/acc55ccb2dce0673acfdc94461d55b09/b0a15/wtf.webp 500w&quot;
+        src=&quot;/static/acc55ccb2dce0673acfdc94461d55b09/b0a15/wtf.webp&quot;
+        srcset=&quot;/static/acc55ccb2dce0673acfdc94461d55b09/ba381/wtf.webp 200w,
+/static/acc55ccb2dce0673acfdc94461d55b09/7f61c/wtf.webp 400w,
+/static/acc55ccb2dce0673acfdc94461d55b09/b0a15/wtf.webp 500w&quot;
         sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -311,7 +311,7 @@ employPaymentInfo&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/portfolio/static/84aee181ad1b2b3f894084cf0b118a63/2fa75/callback-hell.jpg&quot;
+    href=&quot;/static/84aee181ad1b2b3f894084cf0b118a63/2fa75/callback-hell.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -324,10 +324,10 @@ employPaymentInfo&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;callback hell&quot;
         title=&quot;&quot;
-        src=&quot;/portfolio/static/84aee181ad1b2b3f894084cf0b118a63/2fa75/callback-hell.jpg&quot;
-        srcset=&quot;/portfolio/static/84aee181ad1b2b3f894084cf0b118a63/e07e9/callback-hell.jpg 200w,
-/portfolio/static/84aee181ad1b2b3f894084cf0b118a63/066f9/callback-hell.jpg 400w,
-/portfolio/static/84aee181ad1b2b3f894084cf0b118a63/2fa75/callback-hell.jpg 721w&quot;
+        src=&quot;/static/84aee181ad1b2b3f894084cf0b118a63/2fa75/callback-hell.jpg&quot;
+        srcset=&quot;/static/84aee181ad1b2b3f894084cf0b118a63/e07e9/callback-hell.jpg 200w,
+/static/84aee181ad1b2b3f894084cf0b118a63/066f9/callback-hell.jpg 400w,
+/static/84aee181ad1b2b3f894084cf0b118a63/2fa75/callback-hell.jpg 721w&quot;
         sizes=&quot;(max-width: 721px) 100vw, 721px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
