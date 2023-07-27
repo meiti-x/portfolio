@@ -45,9 +45,9 @@ export default function Index({data}) {
                     <div className="decoration">
                         <img
                             src={`${config.assetsBasePath}/astro.png`}
-                            alt="RAM Ram"
+                            alt="فضانوردی که باحاله و لپتاب دستشه"
                             className="image hero-image"
-                            title="RAM Ram"
+                            title="فضانوردی که باحاله و لپتاب دستشه"
                         />
                     </div>
                 </div>

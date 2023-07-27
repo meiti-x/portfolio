@@ -1,5 +1,5 @@
 const config = {
-  siteTitle: "مهدی مومنی",
+  siteTitle: "میتیکس",
   siteUrl: "www.meitix.ir",
   siteLogo: "/logo.png",
   description:
