@@ -9,10 +9,11 @@ import {Hero} from "../components/Hero";
 import {projectsList} from "../data/projectsList";
 import {getSimplifiedPosts} from "../utils/helpers";
 import config from "../utils/config";
+import Img from 'gatsby-image'
 
 export default function Index({data}) {
     const latest = data.latestBlog.edges;
-    const highlights = [];
+    const highlights = data.simplifiedHighlights.edges;
     const simplifiedLatest = useMemo(() => getSimplifiedPosts(latest), [latest]);
     const simplifiedHighlights = useMemo(
         () =>
@@ -28,7 +29,7 @@ export default function Index({data}) {
                 <div className="hero-wrapper">
                     <Hero title="سلام، من مهدی‌ام" index>
                         <p className="hero-description small width">
-                            به باغچه دیجیتال من خوش آمدید 🌱
+                            
                             <br/>
                             <br/>
                             من توسعه دهنده نرم افزار هستم.من{" "}
@@ -38,7 +39,7 @@ export default function Index({data}) {
                             <Link to="/blog">
                                 {' '}اینجا{' '}
                             </Link>
-                            در موردشون مینویسم
+                             در موردشون مینویسم🌱
                         </p>
                     </Hero>
                     <div className="decoration">
@@ -59,25 +60,25 @@ export default function Index({data}) {
                     <Posts data={simplifiedLatest} newspaper/>
                 </section>
 
-                {/* <section className="segment large">
-          <Heading title="پرطرفدارها" />
+                {/*<section className="segment large">
+                    <Heading title="پرطرفدارها"/>
 
-          <div className="highlight-preview">
-            {simplifiedHighlights.map((post) => {
-              return (
-                <div className="muted card flex" key={`popular-${post.slug}`}>
-                  {post.thumbnail && <Img fixed={post.thumbnail} />}
-                  <div>
-                    <time>{post.date}</time>
-                    <Link className="card-header" to={post.slug}>
-                      {post.title}
-                    </Link>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </section> */}
+                    <div className="highlight-preview">
+                        {simplifiedHighlights.map((post) => {
+                            return (
+                                <div className="muted card flex" key={`popular-${post.slug}`}>
+                                    {post.thumbnail && <Img fixed={post.thumbnail}/>}
+                                    <div>
+                                        <time>{post.date}</time>
+                                        <Link className="card-header" to={post.slug}>
+                                            {post.title}
+                                        </Link>
+                                    </div>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </section>*/}
 
                 <section className="segment large">
                     <Heading title="پروژه‌ها" slug="/projects"/>
@@ -158,5 +159,35 @@ export const blogQuery = graphql`
         }
       }
     }
+    
+      simplifiedHighlights: allMarkdownRemark(
+    limit: 10
+    sort: {frontmatter: {date: DESC}}
+  ) {
+    edges {
+      node {
+        id
+        frontmatter {
+          categories
+          slug
+          shortTitle
+          title
+          date
+          thumbnail {
+            childImageSharp {
+              fixed {
+                base64
+                tracedSVG
+                aspectRatio
+                srcWebp
+                srcSetWebp
+                originalName
+              }
+            }
+          }
+        }
+      }
+    }
   }
+    }
 `;

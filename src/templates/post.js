@@ -17,23 +17,20 @@ export default function PostTemplate({ data }) {
   const data2 = useGetTaxonomies();
   const categories = data2.categories.group;
   const tags = data2.tags.group;
+  console.log(thumbnail.childImageSharp?.fixed);
   return (
     <div>
       <Helmet title={`${post.frontmatter.title} | ${config.siteTitle}`} />
       <SEO postPath={post.frontmatter.slug} postNode={post} postSEO />
-
       <div className="container post-page">
         <div className="grid">
           <div className="article-content">
             <div className="post-header medium width">
               {thumbnail && (
-                <div className="">
-                  <Img fixed={thumbnail.childImageSharp?.fixed} />
-                </div>
+                  <Img fixed={thumbnail.childImageSharp?.fixed}  />
               )}
-               <Img fixed={thumbnail.childImageSharp?.fixed} />
               <h1>{title}</h1>
-              <small>{georgianToPersianDigits(date)}</small>
+              <small> منتشر شده در :{georgianToPersianDigits(date)} </small>
             </div>
             <section className="segment small">
               <div
@@ -103,13 +100,8 @@ export const pageQuery = graphql`
         categories
         thumbnail {
           childImageSharp {
-            fixed {
-              base64
-              tracedSVG
-              aspectRatio
-              srcWebp
-              srcSetWebp
-              originalName
+           fixed(width: 95, height: 95) {
+              ...GatsbyImageSharpFixed
             }
           }
         }

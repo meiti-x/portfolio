@@ -4,7 +4,7 @@ title:  ایجاد دیزاین سیستم در next با tailwind
 shortTitle: ایجاد design system در nextjs
 slug: /blog/design-system
 date: 1402/03/31
-thumbnail: ./static/logo.png
+thumbnail: ./static/logos/react.png
 tags:
   - design-system
 categories:

@@ -17,7 +17,7 @@ export const Footer = () => {
     return (
         <footer className="footer">
             <section>
-{/*                <nav>
+                {/*                <nav>
                     {links.map((link) => (
                         <a
                             href={link.url}
@@ -45,9 +45,10 @@ export const Footer = () => {
                 </nav>
 
                 <nav>
-
-                    قدرت گرفته از Gatsby و
-                     ساخته شده با این <a href='https://github.com/taniarascia/taniarascia.com'>قالب</a>
+                    <div className="powerdby">
+                        قدرت گرفته از Gatsby و
+                        ساخته شده با این <a href='https://github.com/taniarascia/taniarascia.com'>قالب</a>
+                    </div>
                 </nav>
             </section>
         </footer>

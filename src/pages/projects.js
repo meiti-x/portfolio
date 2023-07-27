@@ -14,21 +14,6 @@ export default function Projects() {
   const [repos, setRepos] = useState([])
   const title = 'پروژه‌ها'
 
-  useEffect(() => {
-    async function getStars() {
-      const repos = await fetch(
-        'https://api.github.com/users/meiti-x/repos?per_page=100'
-      )
-
-      return repos.json()
-    }
-
-    getStars()
-      .then((data) => {
-        setRepos(data)
-      })
-      .catch((err) => console.error(err))
-  }, [])
 
   return (
     <div>
@@ -45,7 +30,7 @@ export default function Projects() {
               return (
                 <div className="card anchored large" key={project.slug}>
                   <div className="stars">
-                    {repos.find((repo) => repo.name === project.slug) && (
+                    {/*{repos.find((repo) => repo.name === project.slug) && (
                       <div className="star">
                         <a
                           href={`https://github.com/meiti-x/${project.slug}/stargazers`}
@@ -57,7 +42,7 @@ export default function Projects() {
                         </a>
                         <StarIcon />
                       </div>
-                    )}
+                    )}*/}
                   </div>
                   <div>
                     <time>{project.date}</time>
@@ -74,7 +59,7 @@ export default function Projects() {
                   <div className="links anchored">
                     {project.writeup && (
                       <Link className="button small" to={project.writeup}>
-                        Article
+                        مقاله
                       </Link>
                     )}
                     {project.url && (
@@ -84,7 +69,7 @@ export default function Projects() {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        Demo <ExternalLinkIcon />
+                        دمو <ExternalLinkIcon />
                       </a>
                     )}
                     <a
@@ -93,7 +78,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      Source <ExternalLinkIcon />
+                      سورس کد <ExternalLinkIcon />
                     </a>
                   </div>
                 </div>
