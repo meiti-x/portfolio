@@ -7,7 +7,6 @@ import config from "../utils/config";
 import { graphql } from "gatsby";
 
 export default function PageTemplate(data) {
-  console.log(data);
   const post = data.markdownRemark;
 
   const { title, description, slug } = post.frontmatter;

@@ -17,7 +17,7 @@ const mainNavItems = [
 ];
 
 const socialNavItems = [
-  { url: "https://github.com/mahdi-momeni", icon: github, label: "GitHub" },
+  { url: "https://github.com/meiti-x", icon: github, label: "GitHub" },
 ];
 
 export const Navigation = ({ theme, onUpdateTheme }) => {

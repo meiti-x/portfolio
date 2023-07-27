@@ -1,9 +1,9 @@
 module.exports = {
   pathPrefix: "/",
   siteMetadata: {
-    title: "Tania Rascia",
+    title: "meitix",
     author: {
-      name: "Tania Rascia",
+      name: "meitix",
     },
 
     siteUrl: "https://mahdi-momeni.github.io/portfolio/",
@@ -21,8 +21,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: "Tania Rascia",
-        short_name: "Tania Rascia",
+        name: "meitix",
+        short_name: "meitix",
         description:
           "Software engineer and open source creator. This is my digital garden.",
         start_url: "/",

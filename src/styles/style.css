@@ -656,22 +656,22 @@ a.button:hover {
 
 .navigation a.item.about:hover,
 .navigation a.item.about.active {
-  border-bottom-color: var(--rainbow-3);
+  border-bottom-color: var(--indigo);
 }
 
 .navigation a.item.blog:hover,
 .navigation a.item.blog.active {
-  border-bottom-color: var(--rainbow-4);
+  border-bottom-color: var(--indigo);
 }
 
 .navigation a.item.projects:hover,
 .navigation a.item.projects.active {
-  border-bottom-color: var(--rainbow-5);
+  border-bottom-color: var(--indigo);
 }
 
 .navigation a.item.git-hub:hover,
 .navigation a.item.git-hub.active {
-  border-bottom-color: var(--rainbow-1);
+  border-bottom-color: var(--indigo);
 }
 
 .theme-toggle {
@@ -1097,7 +1097,7 @@ a.anchor svg {
 a.post {
   display: flex;
   gap: 1rem;
-  padding: 0.4rem 0;
+  padding: 0.8rem 0;
   background: transparent;
   text-decoration: none;
   border-bottom: 1px solid var(--border-color);
@@ -1105,11 +1105,6 @@ a.post {
 
 a.post:last-of-type {
   border: none;
-}
-
-a.post:hover,
-a.post:hover h3 {
-  color: var(--font-color-bleft);
 }
 
 a.post:hover h3 {

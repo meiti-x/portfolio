@@ -27,7 +27,6 @@ export function getTaxonomyFromPosts(posts, taxonomy) {
 }
 
 export function slugify(string) {
-  console.log(string);
   return (
     string &&
     `${string}`

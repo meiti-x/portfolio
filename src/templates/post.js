@@ -17,7 +17,6 @@ export default function PostTemplate({ data }) {
   const data2 = useGetTaxonomies();
   const categories = data2.categories.group;
   const tags = data2.tags.group;
-  console.log(thumbnail);
   return (
     <div>
       <Helmet title={`${post.frontmatter.title} | ${config.siteTitle}`} />
