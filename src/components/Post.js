@@ -9,7 +9,7 @@ import {
 
 export const Post = ({ node, prefix, newspaper }) => {
   let formattedDate;
-
+  console.log(node);
   if (node.date) {
     if (!newspaper) {
       const dateArr = node.date.split("/");

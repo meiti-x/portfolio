@@ -1097,14 +1097,20 @@ a.anchor svg {
 a.post {
     display: flex;
     gap: 1rem;
-    padding: 0.8rem 0;
+    padding: 0.8rem ;
     background: transparent;
     text-decoration: none;
     border-bottom: 1px solid var(--border-color);
+    border-radius: 5px;
+
 }
 
 a.post:last-of-type {
     border: none;
+}
+
+a.post:hover {
+    background: var(--border-color);
 }
 
 a.post:hover h3 {
@@ -1341,7 +1347,8 @@ a.category.active .count {
 .powerdby {
     color: var(--font-color-heading);
 }
-.powerdby a{
+
+.powerdby a {
     display: inline-block !important;
 }
 

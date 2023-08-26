@@ -8,7 +8,7 @@ thumbnail: ./static/logos/react.png
 tags:
   - design-system
 categories:
-  - nextjs
+  - react
 ---
 
 **دیزاین سیستم چیه ؟** دیزاین سیستم به یه سری اصول٬ کامپوننت و قوانینی که ظاهر اپلیکیشن و تجربه کاربری برنامه مارو در بر میگیره٬ میگن. به طور مثال دکمه ها یا اندازه متن ها.
@@ -309,11 +309,65 @@ describe('Button Component', () => {
 });
 ~~~
 
+# نکته
+
+ما بیشتر وقتمون رو صرف خوندن کد میکنیم تا نوشتن پس باید کدمون رو راحت خوند وقتی از tailwind در jsx مون استفاده میکنیم سرعت توسعه مون میره بالا ولی از اون طرف زمان دیباگمون خیلی افزایش پیدا میکنه، مثلا کد زیر دقیقا چی رو قرار نشون بده ؟
+~~~react
+import React from 'react'
+import styles from 'banner.module.css'
+
+function Banner(){
+    return (
+		 <div className="bg-green-100 border-t border-b border-green-500 text-green-700 px-4 py-3" role="alert">
+        		<p className="font-bold">Informational message</p>
+        		<p className="text-sm">Some additional text to explain said message.</p>
+    	     </div>
+	)
+}
+~~~
+
+البته وقتی tailwind داریم کلاس هامون مثل این مثال من انقدر کم نیست و طول خط ها بالای ۴۰ کیلومتره. خوب اینجوری کار کردن با tailwind اصلا خوب نیست زمان زیادی برای دیباگ و یا متوجه شدن کد میخواد. راه بهتره چیه ؟ راه بهتر این که با css-module همین استایل هارو داخل css بنویسید. مثلا:
+
+~~~react
+import React from 'react'
+import styles from 'banner.module.css'
+
+function Banner(){
+    return (
+		 <div className={styles.bannerContainer} role="alert">
+        		<p className={styles.bannerTitle}>Informational message</p>
+        		<p className={styles.bannerDescription}>Some additional text to explain said message.</p>
+    	     </div>
+	)
+}
+~~~
+
+و کد CSS
+~~~css
+.bannerContainer {
+    @apply bg-green-100 border-t border-b border-green-500 text-green-700 px-4 py-3
+}
+
+.bannerTitle {
+    @apply font-bold
+}
+.bannerDescription {
+    @apply text-sm
+}
+~~~
+
+
+
+
+
 ### جمع بندی
 
- برای جمع بندی، این مقاله مقدمه ای برای ساختن دیزاین سیستم های بود یادتون باشه به ازای هر پروژه تصمیم درستی بگیرید نه یک تصمیم را برای هر پروژه استفاده کنید ممکنه این تصمیم برای پروژه های کوچیک [Overengineering](https://en.wikipedia.org/wiki/Overengineering) باشه. ممنونم که این بلاگ پست رو خوندید امیدوارم حاوی نکته‌ای آموزنده ای براتون بوده باشه :)
+ برای جمع بندی، این مقاله مقدمه ای برای ساختن دیزاین سیستم های بود یادتون باشه به ازای هر پروژه تصمیم درستی بگیرید نه یک تصمیم را برای هر پروژه استفاده کنید ممکنه این تصمیم برای پروژه های کوچیک [Overengineering](https://en.wikipedia.org/wiki/Overengineering) باشه و ممنونم که این بلاگ پست رو خوندید امیدوارم حاوی نکته‌ای آموزنده ای براتون بوده باشه :)
 
-##### منابع
+##### منابعی برای مطالعه بیشتر
 
 - https://blog.nimbleways.com/building-utility-first-design-systems-with-tailwind/
 - https://www.youtube.com/watch?v=T-Zv73yZ_QI
+- https://tailwindcss.com/docs/reusing-styles#extracting-classes-with-apply
+- https://www.geeksforgeeks.org/difference-between-imperative-and-declarative-programming/
+- https://headlessui.com یا https://www.radix-ui.com/

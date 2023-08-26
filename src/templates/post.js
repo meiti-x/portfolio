@@ -30,7 +30,7 @@ export default function PostTemplate({ data }) {
                   <Img fixed={thumbnail.childImageSharp?.fixed}  />
               )}
               <h1>{title}</h1>
-              <small> منتشر شده در :{georgianToPersianDigits(date)} </small>
+              <time> منتشر شده در :{georgianToPersianDigits(date)} </time>
             </div>
             <section className="segment small">
               <div

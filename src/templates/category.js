@@ -52,6 +52,7 @@ export const pageQuery = graphql`
           frontmatter {
             slug
             title
+            shortTitle
             date
             tags
             categories

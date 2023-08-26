@@ -32,7 +32,7 @@ export default function Index({data}) {
                             
                             <br/>
                             <br/>
-                            من توسعه دهنده نرم افزار هستم.من{" "}
+                            من توسعه دهنده نرم افزار هستم.{" "}
                             <Link to="/projects">پروژه های اوپن سورس </Link> میسازم
                             و در مورد مهندسی
                             نرم افزار تجربه میکنم و میخونم و
@@ -104,11 +104,11 @@ export default function Index({data}) {
                                         <div className="anchored links">
                                             {project.writeup && (
                                                 <Link className="button" to={project.writeup}>
-                                                    Article
+                                                    لینک مقاله
                                                 </Link>
                                             )}
-                                            <a className="button flex" href={project.url}>
-                                                Demo
+                                            <a className="button flex" href={`https://github.com/meiti-x/${project.slug}`}>
+                                                Source code
                                             </a>
                                         </div>
                                     </div>
