@@ -72,7 +72,7 @@ export default function PostTemplate({ data }) {
               </div>
             </section> */}
           </div>
-          {/* 
+          {/*
           <PostSidebar
             date={date}
             tags={tags}

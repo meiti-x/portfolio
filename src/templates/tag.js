@@ -19,7 +19,7 @@ export default function TagTemplate({ data, pageContext }) {
 
   return (
     <div>
-      <Helmet title={`Posts tagged: ${tag} | ${config.siteTitle}`} />
+      <Helmet title={` ${tag} | ${config.siteTitle}`} />
       <SEO />
 
       <SidebarLayout>
@@ -49,6 +49,7 @@ export const pageQuery = graphql`
           frontmatter {
             slug
             date
+            shortTitle
             title
             tags
             categories

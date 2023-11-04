@@ -1,21 +1,5 @@
 export const projectsList = [
   {
-    name: "react boilerplate",
-    date: "‍۱۴۰۲",
-    slug: "react-boilerplate",
-    tagline:
-      "این پروژه شامل ساختار و کانفیگ اولیه برای پروژه های ری اکتی هست.",
-    highlight: true,
-  },
-  {
-    name: "nextjs-boilerplate",
-    date: "‍۱۴۰۲",
-    slug: "nextjs-boilerplate",
-    tagline:
-      "هدف از این پروژه ارایه ساختار اولیه برای پروژه‌های nextjs هستش. توی این پروژه کانفیگ ها بیسی که توی تمام پروژه ها به درد میخوره اضافه میکنم",
-    highlight: true,
-  },
-  {
     name: "webdev-bashrc",
     date: "‍۱۴۰۲",
     slug: "webdev-bashrc",
@@ -27,8 +11,9 @@ export const projectsList = [
   },
   {
     name: "Dashlib.css",
-    date: "۱۳۹۸",
+    date: "۱۳۹۹",
     slug: "Dashlib.css",
-    tagline: "اولین کتبخونه ام و جز اولین css utility libraryها :))",
+    url: "https://meiti-x.github.io/Dashlib.css/",
+    tagline: "اولین کتابخونه ام و جز اولین   css utility library های دنیا :))",
   },
 ];
